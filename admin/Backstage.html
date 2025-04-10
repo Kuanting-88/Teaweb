@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>冠廷的心血</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/css01.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar" class="js-sidebar">
+        <!-- Content For Sidebar -->
+        <div class="h-100">
+          <div class="sidebar-logo">
+            <a href="#"
+              ><img src="../img/saunchar.jpg" style="width: 40px" /> 山茶</a
+            >
+          </div>
+          <ul class="sidebar-nav">
+            <li class="sidebar-header">後臺管理</li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                data-load="front_page.html"
+                data-target="#content"
+                class="sidebar-link"
+              >
+                <i class="fa-solid fa-list pe-2"></i>
+                首頁
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-target="#pages"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                ><i class="fa-solid fa-file-lines pe-2"></i>
+                會員資料
+              </a>
+              <ul
+                id="pages"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">會員紀錄</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">新增會員</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-target="#posts"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                ><i class="fa-solid fa-sliders pe-2"></i>
+                商品管理
+              </a>
+              <ul
+                id="posts"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">商品欄</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">新增商品</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">未開發</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-target="#auth"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                ><i class="fa-regular fa-user pe-2"></i>
+                訂單管理
+              </a>
+              <ul
+                id="auth"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">訂單紀錄</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">新增訂單</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">未開發</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-target="#settings"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                ><i class="fa-regular fa-user pe-2"></i>
+                設定
+              </a>
+              <ul
+                id="settings"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">??</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">??</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">??</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <button class="btn" id="sidebar-toggle" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                  <img
+                    src="../img/theboy.gif"
+                    class="avatar img-fluid rounded"
+                    alt=""
+                  />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a href="#" class="dropdown-item" id="ManagerInfoLink">帳號資訊</a>
+                  <a href="#" class="dropdown-item" id="Manager_settingLink">帳號設定</a>
+                  <a href="#" class="dropdown-item">登出</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="d-flex flex-column min-vh-100">
+          <div id="content" class="flex-grow-1"></div>
+
+          
+          <footer class="footer">
+            <div class="container-fluid">
+              <div class="row text-muted">
+                <div class="col-6 text-start">
+                  <p class="mb-0">
+                    <a href="#" class="text-muted">
+                      <strong>29號冠廷的心血</strong>
+                    </a>
+                  </p>
+                </div>
+                <div class="col-6 text-end">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#" class="text-muted">內容</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-muted">關於</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-muted">條款</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-muted">訂閱</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="admin.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        //
+        $("#front_page").click(function (e) {
+          e.preventDefault();
+          $("#content").load("front_page.html");
+        });
+
+        // Add this block to handle "首頁" link click
+        $("a:contains('首頁')").click(function (e) {
+        e.preventDefault();
+        $("#content").load("front_page.html");
+        });
+
+        // Add this block to handle "會員紀錄" link click
+        $("a:contains('會員紀錄')").click(function (e) {
+        e.preventDefault();
+        $("#content").load("member.html");
+        });
+
+        // Add this block to handle "新增會員" link click         
+        $("a:contains('新增會員')").click(function (e) {
+        e.preventDefault();
+        $("#content").load("add_member.html");
+        });
+
+        // Add this block to handle "商品" link click         
+        $("a:contains('商品欄')").click(function (e) {
+        e.preventDefault();
+        $("#content").load("product.html");
+        });
+
+        // Add this block to handle "新增商品" link click         
+        $("a:contains('新增商品')").click(function (e) {
+        e.preventDefault();
+        $("#content").load("add_product.html");
+        });
+
+        // Add this block to handle "訂單紀錄" link click         
+        $("a:contains('訂單紀錄')").click(function (e) {
+        e.preventDefault();
+        $("#content").load("orders.html");
+        });
+
+        // Add this block to handle "新增訂單" link click         
+        $("a:contains('新增訂單')").click(function (e) {
+        e.preventDefault();
+        $("#content").load("add_orders.html");
+        });
+
+        //管理者頁面~~
+        // Add this block to handle "帳號資訊" link click
+        $("#ManagerInfoLink").click(function (e) {
+        e.preventDefault();
+        $("#content").load("Manager.html");
+        });
+
+        // Add this block to handle "設定" link click
+        $("#Manager_settingLink").click(function (e) {
+        e.preventDefault();
+        $("#content").load("Manager_setting.html");
+        });
+      });
+    </script>
+  </body>
+</html>
